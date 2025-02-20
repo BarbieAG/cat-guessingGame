@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats' Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="lives">
+    <p id="marker"> Lives: 💖 <span id="heartNumber">3</span></p>
+    
+</div>
+    <audio id="startMeow" src="sounds/catsound.mp3"></audio>
+    <audio id="right" src="sounds/coinsound.mp3"></audio>
+    <audio id="wrong" src="sounds/wrongSound.mp3"></audio>
+    
+    <h1>Cats's Cutesy Quiz!</h1>
+
+    
+    <div id="start"><button onclick="startGame()" id="startButton">Start</button>
+   <p id="disclaimer"> *Disclaimer: ChatGPT was used to help with the grammar of some questions*</p></div>
+
+    <div hidden class="question">
+        <h2>What taste can't cats perceive?</h2> 
+        <button onclick="check(this)" class="correct">Sweet</button>
+        <button onclick="check(this)">Bitter</button>
+        <button onclick="check(this)" >Salty</button>
+        <button onclick="check(this)" >Sour</button>
+        
+    </div>
+
+    <div hidden class="question">
+       
+        <h2>What percent of its life does a cat spend sleeping?</h2>  
+        <button onclick="check(this)">20%</button>
+        <button onclick="check(this)">55%</button>
+        <button onclick="check(this)" class="correct" >70%</button>
+        <button onclick="check(this)" >90%</button>
+    </div>
+
+    <div hidden class="question">
+        <h2>How many toes does a cat have?</h2> 
+        <button onclick="check(this)" >20</button>
+        <button onclick="check(this)" class="correct">18</button>
+        <button onclick="check(this)" >16</button>
+        <button onclick="check(this)" >12</button>
+        
+   </div>
+
+    <div hidden class="question">
+        <h2>How many sounds can a cat make?</h2> 
+        <button onclick="check(this)"  class="correct">100</button>
+        <button onclick="check(this)" >30</button>
+        <button onclick="check(this)" >10</button>
+        <button onclick="check(this)" >150</button>
+    
+    </div>
+
+    <div hidden class="question">
+        <h2>What is one reason a cat kneads?</h2> 
+        <button onclick="check(this)"  class="correct">Affection</button>
+        <button onclick="check(this)" >They are undercover bakers</button>
+        <button onclick="check(this)" >IDk</button>
+        <button onclick="check(this)" >Creating a hiding spot</button>
+    
+    </div>
+
+    <div hidden class="question">
+        <h2>How many kittens are normally in a litter?</h2> 
+        <button onclick="check(this)">1-2</button>
+        <button onclick="check(this)" >8-10</button>
+        <button onclick="check(this)" >9-13</button>
+        <button onclick="check(this)" class="correct" >3-5</button>
+    
+    </div>
+
+    <div hidden class="question">
+        <h2> Which body part can a cat retract?</h2> 
+        <button onclick="check(this)" class="correct">Claws</button>
+        <button onclick="check(this)" >Nose</button>
+        <button onclick="check(this)" >Paws</button>
+        <button onclick="check(this)" >Paws</button>
+    
+    </div>
+
+    <div hidden class="question">
+        <h2> How old is the oldest known pet cat remains?</h2> 
+        <button onclick="check(this)">12,000</button>
+        <button onclick="check(this)" >1,200</button>
+        <button onclick="check(this)" >4,000</button>
+        <button onclick="check(this)" class="correct" >9,500</button>
+    
+    </div>
+
+    <div hidden class="question">
+        <h2> What is the richest cat's networth?</h2> 
+        <button onclick="check(this)">$100,000</button>
+        <button onclick="check(this)" class="correct">$100 millions</button>
+        <button onclick="check(this)" >$20 millions</button>
+        <button onclick="check(this)" >$1 million</button>
+    
+    </div>
+
+    <div hidden class="question">
+        <h2> When was the first cat video ever recorded?</h2> 
+        <button onclick="check(this)">$1899</button>
+        <button onclick="check(this)" >1964</button>
+        <button onclick="check(this)" class="correct" >1894</button>
+        <button onclick="check(this)" > 1910</button>
+    
+    </div>
+
+    <div hidden  class="question">
+        <h2>Where is a cat's unique mark?</h2> 
+        <button onclick="check(this)">Ears</button>
+        <button onclick="check(this)" >Eyes</button>
+        <button onclick="check(this)"  >Tail</button>
+        <button onclick="check(this)" class="correct"> Nose pad</button>
+    
+    </div>
+
+    <div hidden  class="question">
+        <h2>How was President Clinton's cat named?</h2>
+        <button onclick="check(this)" class="correct">Socks</button>
+        <button onclick="check(this)">Missy</button>
+        <button onclick="check(this)">Beans</button>
+        <button onclick="check(this)">Dove</button>
+
+    
+    </div>
+
+    <div hidden class="question">
+        <h2>What percent of genetic makeup does a cat and a tiger share?</h2> 
+        <button onclick="check(this)">50%</button>
+        <button onclick="check(this)" class="correct">95.5%</button>
+        <button onclick="check(this)"  >75%</button>
+        <button onclick="check(this)" > 90%</button>
+    
+    </div>
+    <div hidden id="gameOverscreen">
+        <h2 id="gameOver">Game Over 😿</h2>
+        <button onclick ="restart()" id="gameOverBtn">Restart</button>
+    </div>
+
+    <div hidden id="completedScreen">
+        <h2> Congratulations You are a cat now 😸!</h2>
+        <button onclick="restart()"></button>
+    </div>
+    
+
+</body>
+</html>

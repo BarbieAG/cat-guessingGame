@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: powderblue;
+    text-align: center;
+}
+
+h1{
+    color: deeppink;
+    font-family: "Jacquard 12";
+    font-size: 100px;
+    text-align: center;
+
+
+}
+
+button{
+    border-color: black;
+    border-style: dashed;
+    font-family: "Pixelify Sans";
+    background-color: lightpink;
+    margin: 20px;
+    padding: 0px 10px;
+    font-size: 35px;
+}
+
+button:hover{
+    background-color: palevioletred;
+    cursor: pointer;
+    
+}
+
+h2{
+    font-family: "Pixelify Sans";
+    font-size: 40px;
+
+}
+
+.lives{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    font-family: "Pixelify Sans";
+    font-size: 30px;
+    
+}
+
+.GoButton{
+    background-color: deeppink;
+    font-size: 50px;
+    color: white;
+
+}
+
+.GoButton:hover{
+    background-color: lightpink;
+    color: white;
+}
+
+#disclaimer{
+    font-size: small;
+    font-family: "Pixelify Sans";
+}
+
+
+
