@@ -15,6 +15,7 @@
     <audio id="startMeow" src="sounds/catsound.mp3"></audio>
     <audio id="right" src="sounds/coinsound.mp3"></audio>
     <audio id="wrong" src="sounds/wrongSound.mp3"></audio>
+    <audio id="gameOverSound" src="sounds/gameOver.mp3"></audio>
     
     <h1>Cats's Cutesy Quiz!</h1>
 
@@ -38,6 +39,7 @@
         <button onclick="check(this)">55%</button>
         <button onclick="check(this)" class="correct" >70%</button>
         <button onclick="check(this)" >90%</button>
+    
     </div>
 
     <div hidden class="question">
@@ -80,17 +82,18 @@
         <h2> Which body part can a cat retract?</h2> 
         <button onclick="check(this)" class="correct">Claws</button>
         <button onclick="check(this)" >Nose</button>
-        <button onclick="check(this)" >Paws</button>
+        <button onclick="check(this)" >Eyes</button>
         <button onclick="check(this)" >Paws</button>
     
     </div>
 
     <div hidden class="question">
         <h2> How old is the oldest known pet cat remains?</h2> 
-        <button onclick="check(this)">12,000</button>
-        <button onclick="check(this)" >1,200</button>
-        <button onclick="check(this)" >4,000</button>
-        <button onclick="check(this)" class="correct" >9,500</button>
+        <button onclick="check(this)">12,000 years</button>
+        <button onclick="check(this)" >1,200 years</button>
+        <button onclick="check(this)" >4,000 years</button>
+        <button onclick="check(this)" class="correct" >9,500 years</button>
+        <br><a class="source"  href="https://www.purina.com/articles/cat/behavior/understanding-cats/fun-facts-about-cats">Source</a>
     
     </div>
 
@@ -100,6 +103,7 @@
         <button onclick="check(this)" class="correct">$100 millions</button>
         <button onclick="check(this)" >$20 millions</button>
         <button onclick="check(this)" >$1 million</button>
+        <br><a class="source"  href="https://economictimes.indiatimes.com/industry/miscellaneous/here-are-the-richest-cats-in-the-world-in-2023/nala-cat/slideshow/102613326.cms">Source</a>
     
     </div>
 
@@ -109,6 +113,7 @@
         <button onclick="check(this)" >1964</button>
         <button onclick="check(this)" class="correct" >1894</button>
         <button onclick="check(this)" > 1910</button>
+        <br><a class="source" href="https://cvillecatcare.com/veterinary-topics/101-amazing-cat-facts-fun-trivia-about-your-feline-friend/">Source</a>
     
     </div>
 
@@ -127,16 +132,19 @@
         <button onclick="check(this)">Missy</button>
         <button onclick="check(this)">Beans</button>
         <button onclick="check(this)">Dove</button>
-
+        <br><a class="source" href="https://cvillecatcare.com/veterinary-topics/101-amazing-cat-facts-fun-trivia-about-your-feline-friend/">Source</a>
+    
     
     </div>
 
     <div hidden class="question">
         <h2>What percent of genetic makeup does a cat and a tiger share?</h2> 
         <button onclick="check(this)">50%</button>
-        <button onclick="check(this)" class="correct">95.5%</button>
+        <button onclick="check(this)" class="correct">95.6%</button>
         <button onclick="check(this)"  >75%</button>
         <button onclick="check(this)" > 90%</button>
+        <br><a class="source"  href="https://www.purina.com/articles/cat/behavior/understanding-cats/fun-facts-about-cats">Source</a>
+        
     
     </div>
     <div hidden id="gameOverscreen">
@@ -146,7 +154,7 @@
 
     <div hidden id="completedScreen">
         <h2> Congratulations You are a cat now 😸!</h2>
-        <button onclick="restart()"></button>
+        <button onclick="restart()">Restart</button>
     </div>
     
 
