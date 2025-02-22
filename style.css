@@ -68,7 +68,38 @@ a{
     font-family: "pixelify Sans";
     font-size: medium;
     margin-top: 20px;
+    
 }
 
+#restart{
+
+    background-color: deeppink;
+    font-size: 50px;
+    color: white;
+    border-color: black;
+    border-style: dashed;
+    text-decoration: none;
+
+
+}
+
+#restart:hover{
+    background-color: lightpink;
+    color: white;
+}
+
+#referencespage{
+    margin-left: 120px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.referencestitle{
+    font-size: 20px;
+}
+
+#return{
+    text-align: center;
+}
 
 

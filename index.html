@@ -16,12 +16,33 @@
     <audio id="right" src="sounds/coinsound.mp3"></audio>
     <audio id="wrong" src="sounds/wrongSound.mp3"></audio>
     <audio id="gameOverSound" src="sounds/gameOver.mp3"></audio>
+    <audio id="win" src="sounds/winSequence.mp3"></audio>
     
     <h1>Cats's Cutesy Quiz!</h1>
 
     
     <div id="start"><button onclick="startGame()" id="startButton">Start</button>
-   <p id="disclaimer"> *Disclaimer: ChatGPT was used to help with the grammar of some questions*</p></div>
+       <br> <button onclick="reference()" id="references"> References</button>
+        <p id="disclaimer"> *Disclaimer: ChatGPT was used to help with the grammar of some questions*</p>
+    </div>
+
+    <div hidden id="referencespage">
+        <h2 class="referencestitle">References</h2>
+        <a href="https://www.softminkyblankets.com/blogs/blog/why-do-cats-knead-blankets#:~:text=Comfort%20and%20relaxation%3A%20Kneading%20can,is%20to%20mark%20their%20territory.">Why do cats knead blankets? by Heidi Brewer on Minky Couture</a>
+        <br><a href="https://kids.nationalgeographic.com/games/quizzes/article/cats-quiz-whiz">Cats Quiz on National Geographic Kids</a>
+        <br><a href="https://cvillecatcare.com/veterinary-topics/101-amazing-cat-facts-fun-trivia-about-your-feline-friend/
+        "> 101 Cat Amazing facts on Charlottesville Cat Care Clinic</a>
+       
+
+        <h2 class="referencestitle">Music</h2>
+        <br><a href="https://pixabay.com/sound-effects/cat-meow-6226/">Cat Meow by freesound_community (tuberatanka)</a>
+        <br><a href="https://pixabay.com/sound-effects/kl-peach-game-over-iii-142453/">KL Peach Game Over III by Sound Effect by Kim Ligthyear on Pixabay</a>  
+        <br><a href="https://pixabay.com/sound-effects/8-bit-explosion-95847/">8-bit explosion by freesound_community (jhyland)</a>   
+        <br><a href="https://pixabay.com/sound-effects/retro-video-game-coin-pickup-38299/">Retro Videogame Coin Sound Pickup by  freesound_community(SRJA_Gaming)</a>   
+        <br><a href="https://pixabay.com/sound-effects/winsquare-6993/">WinSquare by freesound_community(Fupicat)</a>
+
+        <br><button id="return" onclick="goBack()">Go Back</button>
+    </div>
 
     <div hidden class="question">
         <h2>What taste can't cats perceive?</h2> 
@@ -143,18 +164,18 @@
         <button onclick="check(this)" class="correct">95.6%</button>
         <button onclick="check(this)"  >75%</button>
         <button onclick="check(this)" > 90%</button>
-        <br><a class="source"  href="https://www.purina.com/articles/cat/behavior/understanding-cats/fun-facts-about-cats">Source</a>
+        
         
     
     </div>
     <div hidden id="gameOverscreen">
         <h2 id="gameOver">Game Over 😿</h2>
-        <button onclick ="restart()" id="gameOverBtn">Restart</button>
+        <a id="restart" href="./index.html">Restart</a>
     </div>
 
     <div hidden id="completedScreen">
         <h2> Congratulations You are a cat now 😸!</h2>
-        <button onclick="restart()">Restart</button>
+        <a id="restart" href="./index.html">Restart</a>
     </div>
     
 

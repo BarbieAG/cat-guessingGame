@@ -2,11 +2,20 @@ let questionNumber = 0
 
 function nextQuestion(){
     let questions = document.querySelectorAll(".question");
+    
     questions.forEach(function (question,index){
         console.log(index);
         if (index == questionNumber){
             question.hidden = false;
-        }else{
+        }
+
+        else if (questionNumber > 12){
+            completedScreen.hidden = false;
+            question.hidden = true;
+            win.play();
+        }
+        
+        else{
             question.hidden = true;
         }
        
@@ -14,6 +23,19 @@ function nextQuestion(){
 
 
 
+}
+
+function reference(){
+    start.hidden = true;
+    referencespage.hidden = false;
+    
+}
+
+function goBack(){
+    referencespage.hidden = true;
+
+    start.hidden = false;
+    
 }
 
 
@@ -37,17 +59,6 @@ function gameOver(){
         
 }
 
-function Win(){
-    let winscreen = document.querySelector("#completedScreen")
-    winscreen.hidden = false
-}
-function restart(){
-    start.hidden = false;
-    gameOverscreen.hidden = true;
-    heartNumber.textContent = 3;
-    questionNumber = 0;
-}
-   
 
 function disableButtons(question){
     let buttons = question.querySelectorAll('button');
@@ -74,6 +85,7 @@ function check(button){
         right.play();
         setTimeout(nextQuestion, 2000);
         console.log(questionNumber);
+        question.hidden
         
         
         
@@ -84,10 +96,6 @@ function check(button){
 
     }
 
-    else if (questionNumber > 12){
-        Win();
-        question.hidden = true;
-    }
     else{ 
         wrong.play();
         button.style.background = "red";
